@@ -45,12 +45,7 @@ print("Intercept : ", model.intercept_)
 
 #Plotting graph
 plt.scatter(hotel_X_test["total_bill"],hotel_y_test)
-plt.plot(hotel_X_test["total_bill"],hotel_y_predict,color='red')
+plt.scatter(hotel_X_test["total_bill"],hotel_y_predict,color='red')
 plt.xlabel("Total Prices")
 plt.ylabel("Tips")
 plt.show()
-
-# Mean Squared Error(MSE) :  0.6697620195828436
-# Weights :  [ 0.07978746  0.27886129  0.03271545 -0.03271545 -0.0169799   0.0169799
-#   0.05837717 -0.08459054  0.09463552 -0.06842215  0.0054634  -0.0054634 ]
-# Intercept :  0.7161646969891828
